@@ -1,0 +1,16 @@
+[y,fs]=audioread('mi2.wav');
+l=length(y);
+n=0:l-1;
+t=n/fs;
+yy=fft(y,l);
+yy1=abs(yy(1:l));
+yy2=abs(yy(l+1:2*l));
+f=n*fs/l;
+subplot(1,2,2);l=length(y);
+n=0:l-1;
+t=n/fs;
+yy=fft(y,l);
+yy1=abs(yy(1:l));
+yy2=abs(yy(l+1:2*l));
+f=n*fs/l;
+subplot(1,2,2);
